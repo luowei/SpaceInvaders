@@ -21,6 +21,15 @@
 		EAA0C9C9193EFE1C00AD3194 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EAA0C9AB193EFE1C00AD3194 /* UIKit.framework */; };
 		EAA0C9D1193EFE1C00AD3194 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = EAA0C9CF193EFE1C00AD3194 /* InfoPlist.strings */; };
 		EAA0C9D3193EFE1C00AD3194 /* SpaceInvadersTests.m in Sources */ = {isa = PBXBuildFile; fileRef = EAA0C9D2193EFE1C00AD3194 /* SpaceInvadersTests.m */; };
+		EAA0C9DD193EFE3900AD3194 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = EAA0C9DC193EFE3900AD3194 /* README.md */; };
+		EAA0C9E4193EFF0B00AD3194 /* blue_enemy.png in Resources */ = {isa = PBXBuildFile; fileRef = EAA0C9DE193EFF0B00AD3194 /* blue_enemy.png */; };
+		EAA0C9E5193EFF0B00AD3194 /* green_enemy.png in Resources */ = {isa = PBXBuildFile; fileRef = EAA0C9DF193EFF0B00AD3194 /* green_enemy.png */; };
+		EAA0C9E6193EFF0B00AD3194 /* hero.png in Resources */ = {isa = PBXBuildFile; fileRef = EAA0C9E0193EFF0B00AD3194 /* hero.png */; };
+		EAA0C9E7193EFF0B00AD3194 /* bullet.png in Resources */ = {isa = PBXBuildFile; fileRef = EAA0C9E1193EFF0B00AD3194 /* bullet.png */; };
+		EAA0C9E9193EFF0B00AD3194 /* yello_enemy.png in Resources */ = {isa = PBXBuildFile; fileRef = EAA0C9E3193EFF0B00AD3194 /* yello_enemy.png */; };
+		EAA0C9EB193F022D00AD3194 /* welcome.png in Resources */ = {isa = PBXBuildFile; fileRef = EAA0C9EA193F022D00AD3194 /* welcome.png */; };
+		EAA0C9EE193F05B400AD3194 /* Game.m in Sources */ = {isa = PBXBuildFile; fileRef = EAA0C9ED193F05B400AD3194 /* Game.m */; };
+		EAA0C9F0193F11F400AD3194 /* doc in Resources */ = {isa = PBXBuildFile; fileRef = EAA0C9EF193F11F400AD3194 /* doc */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +62,16 @@
 		EAA0C9CE193EFE1C00AD3194 /* SpaceInvadersTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "SpaceInvadersTests-Info.plist"; sourceTree = "<group>"; };
 		EAA0C9D0193EFE1C00AD3194 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		EAA0C9D2193EFE1C00AD3194 /* SpaceInvadersTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SpaceInvadersTests.m; sourceTree = "<group>"; };
+		EAA0C9DC193EFE3900AD3194 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.md; sourceTree = "<group>"; };
+		EAA0C9DE193EFF0B00AD3194 /* blue_enemy.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = blue_enemy.png; sourceTree = "<group>"; };
+		EAA0C9DF193EFF0B00AD3194 /* green_enemy.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = green_enemy.png; sourceTree = "<group>"; };
+		EAA0C9E0193EFF0B00AD3194 /* hero.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = hero.png; sourceTree = "<group>"; };
+		EAA0C9E1193EFF0B00AD3194 /* bullet.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bullet.png; sourceTree = "<group>"; };
+		EAA0C9E3193EFF0B00AD3194 /* yello_enemy.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = yello_enemy.png; sourceTree = "<group>"; };
+		EAA0C9EA193F022D00AD3194 /* welcome.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = welcome.png; sourceTree = "<group>"; };
+		EAA0C9EC193F05B400AD3194 /* Game.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Game.h; sourceTree = "<group>"; };
+		EAA0C9ED193F05B400AD3194 /* Game.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Game.m; sourceTree = "<group>"; };
+		EAA0C9EF193F11F400AD3194 /* doc */ = {isa = PBXFileReference; lastKnownFileType = folder; path = doc; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,10 +101,12 @@
 		EAA0C99B193EFE1C00AD3194 = {
 			isa = PBXGroup;
 			children = (
+				EAA0C9DC193EFE3900AD3194 /* README.md */,
 				EAA0C9AD193EFE1C00AD3194 /* SpaceInvaders */,
 				EAA0C9CC193EFE1C00AD3194 /* SpaceInvadersTests */,
 				EAA0C9A6193EFE1C00AD3194 /* Frameworks */,
 				EAA0C9A5193EFE1C00AD3194 /* Products */,
+				EAA0C9EF193F11F400AD3194 /* doc */,
 			);
 			sourceTree = "<group>";
 		};
@@ -117,6 +138,8 @@
 				EAA0C9B9193EFE1C00AD3194 /* Main.storyboard */,
 				EAA0C9BC193EFE1C00AD3194 /* ViewController.h */,
 				EAA0C9BD193EFE1C00AD3194 /* ViewController.m */,
+				EAA0C9EC193F05B400AD3194 /* Game.h */,
+				EAA0C9ED193F05B400AD3194 /* Game.m */,
 				EAA0C9BF193EFE1C00AD3194 /* Images.xcassets */,
 				EAA0C9AE193EFE1C00AD3194 /* Supporting Files */,
 			);
@@ -126,6 +149,12 @@
 		EAA0C9AE193EFE1C00AD3194 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				EAA0C9DE193EFF0B00AD3194 /* blue_enemy.png */,
+				EAA0C9EA193F022D00AD3194 /* welcome.png */,
+				EAA0C9DF193EFF0B00AD3194 /* green_enemy.png */,
+				EAA0C9E0193EFF0B00AD3194 /* hero.png */,
+				EAA0C9E1193EFF0B00AD3194 /* bullet.png */,
+				EAA0C9E3193EFF0B00AD3194 /* yello_enemy.png */,
 				EAA0C9AF193EFE1C00AD3194 /* SpaceInvaders-Info.plist */,
 				EAA0C9B0193EFE1C00AD3194 /* InfoPlist.strings */,
 				EAA0C9B3193EFE1C00AD3194 /* main.m */,
@@ -230,6 +259,14 @@
 			files = (
 				EAA0C9C0193EFE1C00AD3194 /* Images.xcassets in Resources */,
 				EAA0C9B2193EFE1C00AD3194 /* InfoPlist.strings in Resources */,
+				EAA0C9E5193EFF0B00AD3194 /* green_enemy.png in Resources */,
+				EAA0C9E6193EFF0B00AD3194 /* hero.png in Resources */,
+				EAA0C9E7193EFF0B00AD3194 /* bullet.png in Resources */,
+				EAA0C9F0193F11F400AD3194 /* doc in Resources */,
+				EAA0C9E4193EFF0B00AD3194 /* blue_enemy.png in Resources */,
+				EAA0C9EB193F022D00AD3194 /* welcome.png in Resources */,
+				EAA0C9DD193EFE3900AD3194 /* README.md in Resources */,
+				EAA0C9E9193EFF0B00AD3194 /* yello_enemy.png in Resources */,
 				EAA0C9BB193EFE1C00AD3194 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -252,6 +289,7 @@
 				EAA0C9BE193EFE1C00AD3194 /* ViewController.m in Sources */,
 				EAA0C9B8193EFE1C00AD3194 /* AppDelegate.m in Sources */,
 				EAA0C9B4193EFE1C00AD3194 /* main.m in Sources */,
+				EAA0C9EE193F05B400AD3194 /* Game.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
