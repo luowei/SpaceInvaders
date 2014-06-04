@@ -92,6 +92,46 @@
                                 <rect key="frame" x="157" y="472" width="6" height="20"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="green_enemy.png" translatesAutoresizingMaskIntoConstraints="NO" id="iO8-fL-p34">
+                                <rect key="frame" x="20" y="33" width="45" height="45"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="green_enemy.png" translatesAutoresizingMaskIntoConstraints="NO" id="psa-Ha-wta">
+                                <rect key="frame" x="138" y="33" width="45" height="45"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="green_enemy.png" translatesAutoresizingMaskIntoConstraints="NO" id="W9C-Tu-7mg">
+                                <rect key="frame" x="255" y="33" width="45" height="45"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="yello_enemy.png" translatesAutoresizingMaskIntoConstraints="NO" id="kta-e6-hgp">
+                                <rect key="frame" x="20" y="86" width="45" height="45"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="yello_enemy.png" translatesAutoresizingMaskIntoConstraints="NO" id="HIU-ia-eIl">
+                                <rect key="frame" x="138" y="86" width="45" height="45"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="yello_enemy.png" translatesAutoresizingMaskIntoConstraints="NO" id="Laj-iQ-Y26">
+                                <rect key="frame" x="255" y="86" width="45" height="45"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="blue_enemy.png" translatesAutoresizingMaskIntoConstraints="NO" id="040-7b-tD6">
+                                <rect key="frame" x="79" y="141" width="45" height="45"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="blue_enemy.png" translatesAutoresizingMaskIntoConstraints="NO" id="1U7-2x-pZs">
+                                <rect key="frame" x="197" y="141" width="45" height="45"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="green_enemy.png" translatesAutoresizingMaskIntoConstraints="NO" id="Lvs-3d-mit">
+                                <rect key="frame" x="79" y="202" width="45" height="45"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="green_enemy.png" translatesAutoresizingMaskIntoConstraints="NO" id="4Fo-vZ-Z4d">
+                                <rect key="frame" x="197" y="202" width="45" height="45"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
@@ -99,6 +139,16 @@
                         <outlet property="bullet" destination="5Vo-Pt-MdW" id="7Zl-9C-yuN"/>
                         <outlet property="exit" destination="bGD-cX-iJZ" id="BPj-Sq-sRt"/>
                         <outlet property="hero" destination="6V6-H8-DM5" id="ooC-Zd-dZl"/>
+                        <outlet property="monster1" destination="iO8-fL-p34" id="1q2-hN-4br"/>
+                        <outlet property="monster10" destination="4Fo-vZ-Z4d" id="sOm-gQ-XF4"/>
+                        <outlet property="monster2" destination="psa-Ha-wta" id="o5V-p3-NRF"/>
+                        <outlet property="monster3" destination="W9C-Tu-7mg" id="TjE-c7-Y36"/>
+                        <outlet property="monster4" destination="kta-e6-hgp" id="suC-HQ-AZW"/>
+                        <outlet property="monster5" destination="HIU-ia-eIl" id="x2c-E4-mBZ"/>
+                        <outlet property="monster6" destination="Laj-iQ-Y26" id="T7e-S0-Y2i"/>
+                        <outlet property="monster7" destination="040-7b-tD6" id="Cnw-1s-ZZ3"/>
+                        <outlet property="monster8" destination="1U7-2x-pZs" id="0VR-gY-dKP"/>
+                        <outlet property="monster9" destination="Lvs-3d-mit" id="BH8-C7-fkb"/>
                         <outlet property="shoot" destination="YPZ-XL-NIE" id="hfT-dv-7km"/>
                         <outlet property="start" destination="sgi-z8-fTJ" id="ECp-qw-LVK"/>
                     </connections>
@@ -109,9 +159,12 @@
         </scene>
     </scenes>
     <resources>
+        <image name="blue_enemy.png" width="200" height="200"/>
         <image name="bullet.png" width="100" height="200"/>
+        <image name="green_enemy.png" width="200" height="200"/>
         <image name="hero.png" width="200" height="200"/>
         <image name="welcome.png" width="320" height="480"/>
+        <image name="yello_enemy.png" width="200" height="200"/>
     </resources>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
