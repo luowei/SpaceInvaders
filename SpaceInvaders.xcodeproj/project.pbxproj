@@ -1,0 +1,471 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		EAA0C9A8193EFE1C00AD3194 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EAA0C9A7193EFE1C00AD3194 /* Foundation.framework */; };
+		EAA0C9AA193EFE1C00AD3194 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EAA0C9A9193EFE1C00AD3194 /* CoreGraphics.framework */; };
+		EAA0C9AC193EFE1C00AD3194 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EAA0C9AB193EFE1C00AD3194 /* UIKit.framework */; };
+		EAA0C9B2193EFE1C00AD3194 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = EAA0C9B0193EFE1C00AD3194 /* InfoPlist.strings */; };
+		EAA0C9B4193EFE1C00AD3194 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = EAA0C9B3193EFE1C00AD3194 /* main.m */; };
+		EAA0C9B8193EFE1C00AD3194 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = EAA0C9B7193EFE1C00AD3194 /* AppDelegate.m */; };
+		EAA0C9BB193EFE1C00AD3194 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EAA0C9B9193EFE1C00AD3194 /* Main.storyboard */; };
+		EAA0C9BE193EFE1C00AD3194 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EAA0C9BD193EFE1C00AD3194 /* ViewController.m */; };
+		EAA0C9C0193EFE1C00AD3194 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EAA0C9BF193EFE1C00AD3194 /* Images.xcassets */; };
+		EAA0C9C7193EFE1C00AD3194 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EAA0C9C6193EFE1C00AD3194 /* XCTest.framework */; };
+		EAA0C9C8193EFE1C00AD3194 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EAA0C9A7193EFE1C00AD3194 /* Foundation.framework */; };
+		EAA0C9C9193EFE1C00AD3194 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EAA0C9AB193EFE1C00AD3194 /* UIKit.framework */; };
+		EAA0C9D1193EFE1C00AD3194 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = EAA0C9CF193EFE1C00AD3194 /* InfoPlist.strings */; };
+		EAA0C9D3193EFE1C00AD3194 /* SpaceInvadersTests.m in Sources */ = {isa = PBXBuildFile; fileRef = EAA0C9D2193EFE1C00AD3194 /* SpaceInvadersTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		EAA0C9CA193EFE1C00AD3194 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EAA0C99C193EFE1C00AD3194 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EAA0C9A3193EFE1C00AD3194;
+			remoteInfo = SpaceInvaders;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		EAA0C9A4193EFE1C00AD3194 /* SpaceInvaders.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SpaceInvaders.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		EAA0C9A7193EFE1C00AD3194 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		EAA0C9A9193EFE1C00AD3194 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		EAA0C9AB193EFE1C00AD3194 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		EAA0C9AF193EFE1C00AD3194 /* SpaceInvaders-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "SpaceInvaders-Info.plist"; sourceTree = "<group>"; };
+		EAA0C9B1193EFE1C00AD3194 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		EAA0C9B3193EFE1C00AD3194 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		EAA0C9B5193EFE1C00AD3194 /* SpaceInvaders-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SpaceInvaders-Prefix.pch"; sourceTree = "<group>"; };
+		EAA0C9B6193EFE1C00AD3194 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		EAA0C9B7193EFE1C00AD3194 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		EAA0C9BA193EFE1C00AD3194 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		EAA0C9BC193EFE1C00AD3194 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		EAA0C9BD193EFE1C00AD3194 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		EAA0C9BF193EFE1C00AD3194 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		EAA0C9C5193EFE1C00AD3194 /* SpaceInvadersTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SpaceInvadersTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		EAA0C9C6193EFE1C00AD3194 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		EAA0C9CE193EFE1C00AD3194 /* SpaceInvadersTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "SpaceInvadersTests-Info.plist"; sourceTree = "<group>"; };
+		EAA0C9D0193EFE1C00AD3194 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		EAA0C9D2193EFE1C00AD3194 /* SpaceInvadersTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SpaceInvadersTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		EAA0C9A1193EFE1C00AD3194 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EAA0C9AA193EFE1C00AD3194 /* CoreGraphics.framework in Frameworks */,
+				EAA0C9AC193EFE1C00AD3194 /* UIKit.framework in Frameworks */,
+				EAA0C9A8193EFE1C00AD3194 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EAA0C9C2193EFE1C00AD3194 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EAA0C9C7193EFE1C00AD3194 /* XCTest.framework in Frameworks */,
+				EAA0C9C9193EFE1C00AD3194 /* UIKit.framework in Frameworks */,
+				EAA0C9C8193EFE1C00AD3194 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		EAA0C99B193EFE1C00AD3194 = {
+			isa = PBXGroup;
+			children = (
+				EAA0C9AD193EFE1C00AD3194 /* SpaceInvaders */,
+				EAA0C9CC193EFE1C00AD3194 /* SpaceInvadersTests */,
+				EAA0C9A6193EFE1C00AD3194 /* Frameworks */,
+				EAA0C9A5193EFE1C00AD3194 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		EAA0C9A5193EFE1C00AD3194 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				EAA0C9A4193EFE1C00AD3194 /* SpaceInvaders.app */,
+				EAA0C9C5193EFE1C00AD3194 /* SpaceInvadersTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		EAA0C9A6193EFE1C00AD3194 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				EAA0C9A7193EFE1C00AD3194 /* Foundation.framework */,
+				EAA0C9A9193EFE1C00AD3194 /* CoreGraphics.framework */,
+				EAA0C9AB193EFE1C00AD3194 /* UIKit.framework */,
+				EAA0C9C6193EFE1C00AD3194 /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		EAA0C9AD193EFE1C00AD3194 /* SpaceInvaders */ = {
+			isa = PBXGroup;
+			children = (
+				EAA0C9B6193EFE1C00AD3194 /* AppDelegate.h */,
+				EAA0C9B7193EFE1C00AD3194 /* AppDelegate.m */,
+				EAA0C9B9193EFE1C00AD3194 /* Main.storyboard */,
+				EAA0C9BC193EFE1C00AD3194 /* ViewController.h */,
+				EAA0C9BD193EFE1C00AD3194 /* ViewController.m */,
+				EAA0C9BF193EFE1C00AD3194 /* Images.xcassets */,
+				EAA0C9AE193EFE1C00AD3194 /* Supporting Files */,
+			);
+			path = SpaceInvaders;
+			sourceTree = "<group>";
+		};
+		EAA0C9AE193EFE1C00AD3194 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				EAA0C9AF193EFE1C00AD3194 /* SpaceInvaders-Info.plist */,
+				EAA0C9B0193EFE1C00AD3194 /* InfoPlist.strings */,
+				EAA0C9B3193EFE1C00AD3194 /* main.m */,
+				EAA0C9B5193EFE1C00AD3194 /* SpaceInvaders-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		EAA0C9CC193EFE1C00AD3194 /* SpaceInvadersTests */ = {
+			isa = PBXGroup;
+			children = (
+				EAA0C9D2193EFE1C00AD3194 /* SpaceInvadersTests.m */,
+				EAA0C9CD193EFE1C00AD3194 /* Supporting Files */,
+			);
+			path = SpaceInvadersTests;
+			sourceTree = "<group>";
+		};
+		EAA0C9CD193EFE1C00AD3194 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				EAA0C9CE193EFE1C00AD3194 /* SpaceInvadersTests-Info.plist */,
+				EAA0C9CF193EFE1C00AD3194 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		EAA0C9A3193EFE1C00AD3194 /* SpaceInvaders */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EAA0C9D6193EFE1C00AD3194 /* Build configuration list for PBXNativeTarget "SpaceInvaders" */;
+			buildPhases = (
+				EAA0C9A0193EFE1C00AD3194 /* Sources */,
+				EAA0C9A1193EFE1C00AD3194 /* Frameworks */,
+				EAA0C9A2193EFE1C00AD3194 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SpaceInvaders;
+			productName = SpaceInvaders;
+			productReference = EAA0C9A4193EFE1C00AD3194 /* SpaceInvaders.app */;
+			productType = "com.apple.product-type.application";
+		};
+		EAA0C9C4193EFE1C00AD3194 /* SpaceInvadersTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EAA0C9D9193EFE1C00AD3194 /* Build configuration list for PBXNativeTarget "SpaceInvadersTests" */;
+			buildPhases = (
+				EAA0C9C1193EFE1C00AD3194 /* Sources */,
+				EAA0C9C2193EFE1C00AD3194 /* Frameworks */,
+				EAA0C9C3193EFE1C00AD3194 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EAA0C9CB193EFE1C00AD3194 /* PBXTargetDependency */,
+			);
+			name = SpaceInvadersTests;
+			productName = SpaceInvadersTests;
+			productReference = EAA0C9C5193EFE1C00AD3194 /* SpaceInvadersTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		EAA0C99C193EFE1C00AD3194 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = rootls;
+				TargetAttributes = {
+					EAA0C9C4193EFE1C00AD3194 = {
+						TestTargetID = EAA0C9A3193EFE1C00AD3194;
+					};
+				};
+			};
+			buildConfigurationList = EAA0C99F193EFE1C00AD3194 /* Build configuration list for PBXProject "SpaceInvaders" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = EAA0C99B193EFE1C00AD3194;
+			productRefGroup = EAA0C9A5193EFE1C00AD3194 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				EAA0C9A3193EFE1C00AD3194 /* SpaceInvaders */,
+				EAA0C9C4193EFE1C00AD3194 /* SpaceInvadersTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		EAA0C9A2193EFE1C00AD3194 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EAA0C9C0193EFE1C00AD3194 /* Images.xcassets in Resources */,
+				EAA0C9B2193EFE1C00AD3194 /* InfoPlist.strings in Resources */,
+				EAA0C9BB193EFE1C00AD3194 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EAA0C9C3193EFE1C00AD3194 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EAA0C9D1193EFE1C00AD3194 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		EAA0C9A0193EFE1C00AD3194 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EAA0C9BE193EFE1C00AD3194 /* ViewController.m in Sources */,
+				EAA0C9B8193EFE1C00AD3194 /* AppDelegate.m in Sources */,
+				EAA0C9B4193EFE1C00AD3194 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EAA0C9C1193EFE1C00AD3194 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EAA0C9D3193EFE1C00AD3194 /* SpaceInvadersTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		EAA0C9CB193EFE1C00AD3194 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EAA0C9A3193EFE1C00AD3194 /* SpaceInvaders */;
+			targetProxy = EAA0C9CA193EFE1C00AD3194 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		EAA0C9B0193EFE1C00AD3194 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EAA0C9B1193EFE1C00AD3194 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		EAA0C9B9193EFE1C00AD3194 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EAA0C9BA193EFE1C00AD3194 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		EAA0C9CF193EFE1C00AD3194 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EAA0C9D0193EFE1C00AD3194 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		EAA0C9D4193EFE1C00AD3194 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		EAA0C9D5193EFE1C00AD3194 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		EAA0C9D7193EFE1C00AD3194 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SpaceInvaders/SpaceInvaders-Prefix.pch";
+				INFOPLIST_FILE = "SpaceInvaders/SpaceInvaders-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		EAA0C9D8193EFE1C00AD3194 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SpaceInvaders/SpaceInvaders-Prefix.pch";
+				INFOPLIST_FILE = "SpaceInvaders/SpaceInvaders-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		EAA0C9DA193EFE1C00AD3194 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/SpaceInvaders.app/SpaceInvaders";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SpaceInvaders/SpaceInvaders-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "SpaceInvadersTests/SpaceInvadersTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		EAA0C9DB193EFE1C00AD3194 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/SpaceInvaders.app/SpaceInvaders";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SpaceInvaders/SpaceInvaders-Prefix.pch";
+				INFOPLIST_FILE = "SpaceInvadersTests/SpaceInvadersTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		EAA0C99F193EFE1C00AD3194 /* Build configuration list for PBXProject "SpaceInvaders" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EAA0C9D4193EFE1C00AD3194 /* Debug */,
+				EAA0C9D5193EFE1C00AD3194 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EAA0C9D6193EFE1C00AD3194 /* Build configuration list for PBXNativeTarget "SpaceInvaders" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EAA0C9D7193EFE1C00AD3194 /* Debug */,
+				EAA0C9D8193EFE1C00AD3194 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		EAA0C9D9193EFE1C00AD3194 /* Build configuration list for PBXNativeTarget "SpaceInvadersTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EAA0C9DA193EFE1C00AD3194 /* Debug */,
+				EAA0C9DB193EFE1C00AD3194 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = EAA0C99C193EFE1C00AD3194 /* Project object */;
+}
