@@ -144,6 +144,13 @@
                                 <rect key="frame" x="130" y="9" width="6" height="20"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
+                            <label hidden="YES" opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="You Lose!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="g0K-zq-hjS">
+                                <rect key="frame" x="54" y="336" width="212" height="72"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
@@ -166,6 +173,7 @@
                         <outlet property="monsterBullet3" destination="Bi1-WF-c34" id="7Nv-ts-xVZ"/>
                         <outlet property="shoot" destination="YPZ-XL-NIE" id="hfT-dv-7km"/>
                         <outlet property="start" destination="sgi-z8-fTJ" id="ECp-qw-LVK"/>
+                        <outlet property="winOrLose" destination="g0K-zq-hjS" id="JF3-nX-3w9"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7GW-8w-JqQ" userLabel="First Responder" sceneMemberID="firstResponder"/>

@@ -52,9 +52,14 @@ int monsterShootStart;
 @property (weak, nonatomic) IBOutlet UIImageView *monsterBullet2;
 @property (weak, nonatomic) IBOutlet UIImageView *monsterBullet3;
 
+@property (weak, nonatomic) IBOutlet UILabel *winOrLose;
 @end
 
 @implementation Game
+
+-(void)gameOver{
+    
+}
 
 -(void)monsterMoveDown{
     _monster1.center = CGPointMake(_monster1.center.x, _monster1.center.y+5);
@@ -80,6 +85,16 @@ int monsterShootStart;
 }
 
 -(void)collision{
+    if(CGRectIntersectsRect(_monsterBullet.frame, _hero.frame)){
+        [self gameOver];
+    }
+    if(CGRectIntersectsRect(_monsterBullet2.frame, _hero.frame)){
+        [self gameOver];
+    }
+    if(CGRectIntersectsRect(_monsterBullet3.frame, _hero.frame)){
+        [self gameOver];
+    }
+    
     if(CGRectIntersectsRect(_bullet.frame, _monster1.frame) && monster1Hit == NO){
         monster1Hit = YES;
         _monster1.hidden = YES;
@@ -306,6 +321,8 @@ int monsterShootStart;
     _monsterBullet.hidden = YES;
     _monsterBullet2.hidden = YES;
     _monsterBullet3.hidden = YES;
+    
+    _winOrLose.hidden = YES;
     
     monsterMovement = 5;
 }
