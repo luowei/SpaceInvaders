@@ -22,6 +22,8 @@ BOOL monster7Hit;
 BOOL monster8Hit;
 BOOL monster9Hit;
 BOOL monster10Hit;
+int monsterMovement;
+int monsterShootStart;
 
 @interface Game (){
     NSTimer *movementTimer;
@@ -45,9 +47,29 @@ BOOL monster10Hit;
 @property (weak, nonatomic) IBOutlet UIImageView *monster9;
 @property (weak, nonatomic) IBOutlet UIImageView *monster10;
 
+
+@property (weak, nonatomic) IBOutlet UIImageView *monsterBullet;
+@property (weak, nonatomic) IBOutlet UIImageView *monsterBullet2;
+@property (weak, nonatomic) IBOutlet UIImageView *monsterBullet3;
+
 @end
 
 @implementation Game
+
+-(void)monsterMoveDown{
+    _monster1.center = CGPointMake(_monster1.center.x, _monster1.center.y+5);
+    _monster2.center = CGPointMake(_monster2.center.x, _monster2.center.y+5);
+    _monster3.center = CGPointMake(_monster3.center.x, _monster3.center.y+5);
+    _monster4.center = CGPointMake(_monster4.center.x, _monster4.center.y+5);
+    _monster5.center = CGPointMake(_monster5.center.x, _monster5.center.y+5);
+    _monster6.center = CGPointMake(_monster6.center.x, _monster6.center.y+5);
+    _monster7.center = CGPointMake(_monster7.center.x, _monster7.center.y+5);
+    _monster8.center = CGPointMake(_monster8.center.x, _monster8.center.y+5);
+    _monster9.center = CGPointMake(_monster9.center.x, _monster9.center.y+5);
+    _monster10.center = CGPointMake(_monster10.center.x, _monster10.center.y+5);
+    
+    
+}
 
 -(void)monsterKilled{
     monsterKilled += 1;
@@ -138,11 +160,63 @@ BOOL monster10Hit;
     
     _hero.center = CGPointMake(_hero.center.x+heroMovement, _hero.center.y);
     _bullet.center = CGPointMake(_bullet.center.x, _bullet.center.y-bulletMovement);
+    _monster1.center = CGPointMake(_monster1.center.x+monsterMovement, _monster1.center.y);
+    _monster2.center = CGPointMake(_monster2.center.x+monsterMovement, _monster2.center.y);
+    _monster3.center = CGPointMake(_monster3.center.x+monsterMovement, _monster3.center.y);
+    _monster4.center = CGPointMake(_monster4.center.x+monsterMovement, _monster4.center.y);
+    _monster5.center = CGPointMake(_monster5.center.x+monsterMovement, _monster5.center.y);
+    _monster6.center = CGPointMake(_monster6.center.x+monsterMovement, _monster6.center.y);
+    _monster7.center = CGPointMake(_monster7.center.x+monsterMovement, _monster7.center.y);
+    _monster8.center = CGPointMake(_monster8.center.x+monsterMovement, _monster8.center.y);
+    _monster9.center = CGPointMake(_monster9.center.x+monsterMovement, _monster9.center.y);
+    _monster10.center = CGPointMake(_monster10.center.x+monsterMovement, _monster10.center.y);
+    _monsterBullet.center = CGPointMake(_monsterBullet.center.x, _monsterBullet.center.y+10);
+    _monsterBullet2.center = CGPointMake(_monsterBullet2.center.x, _monsterBullet2.center.y+10);
+    _monsterBullet3.center = CGPointMake(_monsterBullet3.center.x, _monsterBullet3.center.y+10);
+    
+    if(_monsterBullet.center.y > 570){
+        monsterShootStart = arc4random() % 300;
+        _monsterBullet.center = CGPointMake(monsterShootStart, -10);
+    }
+    if(_monsterBullet2.center.y > 570){
+        monsterShootStart = arc4random() % 300;
+        _monsterBullet2.center = CGPointMake(monsterShootStart, -10);
+    }
+    if(_monsterBullet3.center.y > 570){
+        monsterShootStart = arc4random() % 300;
+        _monsterBullet2.center = CGPointMake(monsterShootStart, -10);
+    }
     
     if(_bullet.center.y < 0){
         _bullet.hidden = YES;
         bulletOnScreen = 0;
         bulletMovement = 0;
+    }
+    
+    if((_monster1.center.x < -5 && monster1Hit == NO)
+       || (_monster2.center.x < 15 && monster2Hit == NO)
+       || (_monster3.center.x < 15 && monster3Hit == NO)
+       || (_monster4.center.x < 15 && monster4Hit == NO)
+       || (_monster5.center.x < 15 && monster5Hit == NO)
+       || (_monster6.center.x < 15 && monster6Hit == NO)
+       || (_monster7.center.x < 15 && monster7Hit == NO)
+       || (_monster8.center.x < 15 && monster8Hit == NO)
+       || (_monster9.center.x < 15 && monster9Hit == NO)
+       || (_monster10.center.x < 15 && monster10Hit == NO)){
+        monsterMovement = 5;
+        [self monsterMoveDown];
+    }else if((_monster1.center.x > 280 && monster1Hit == NO)
+             || (_monster2.center.x > 300 && monster2Hit == NO)
+             || (_monster3.center.x > 300 && monster3Hit == NO)
+             || (_monster4.center.x > 300 && monster4Hit == NO)
+             || (_monster5.center.x > 300 && monster5Hit == NO)
+             || (_monster6.center.x > 300 && monster6Hit == NO)
+             || (_monster7.center.x > 300 && monster7Hit == NO)
+             || (_monster8.center.x > 300 && monster8Hit == NO)
+             || (_monster9.center.x > 300 && monster9Hit == NO)
+             || (_monster10.center.x > 300 && monster10Hit == NO)){
+        monsterMovement = -5;
+        [self monsterMoveDown];
     }
 }
 
@@ -163,6 +237,19 @@ BOOL monster10Hit;
     _monster8.hidden = NO;
     _monster9.hidden = NO;
     _monster10.hidden = NO	;
+    
+    _monsterBullet.hidden = NO;
+    _monsterBullet2.hidden = NO;
+    _monsterBullet3.hidden = NO;
+    
+    monsterShootStart = arc4random() % 300;
+    _monsterBullet.center = CGPointMake(monsterShootStart, 0);
+    monsterShootStart = arc4random() % 300;
+    _monsterBullet2.center = CGPointMake(monsterShootStart, -150);
+    monsterShootStart = arc4random() % 300;
+    _monsterBullet3.center = CGPointMake(monsterShootStart, -300);
+    
+    
 }
 
 - (IBAction)shoot:(id)sender {
@@ -215,6 +302,12 @@ BOOL monster10Hit;
     _monster8.hidden = YES;
     _monster9.hidden = YES;
     _monster10.hidden = YES;
+    
+    _monsterBullet.hidden = YES;
+    _monsterBullet2.hidden = YES;
+    _monsterBullet3.hidden = YES;
+    
+    monsterMovement = 5;
 }
 
 - (void)didReceiveMemoryWarning

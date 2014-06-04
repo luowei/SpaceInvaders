@@ -132,6 +132,18 @@
                                 <rect key="frame" x="197" y="202" width="45" height="45"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="bullet.png" translatesAutoresizingMaskIntoConstraints="NO" id="YNN-m6-k9Y">
+                                <rect key="frame" x="67" y="9" width="6" height="20"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="bullet.png" translatesAutoresizingMaskIntoConstraints="NO" id="x8E-JW-p1o">
+                                <rect key="frame" x="99" y="9" width="6" height="20"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="bullet.png" translatesAutoresizingMaskIntoConstraints="NO" id="Bi1-WF-c34">
+                                <rect key="frame" x="130" y="9" width="6" height="20"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
@@ -149,13 +161,16 @@
                         <outlet property="monster7" destination="040-7b-tD6" id="Cnw-1s-ZZ3"/>
                         <outlet property="monster8" destination="1U7-2x-pZs" id="0VR-gY-dKP"/>
                         <outlet property="monster9" destination="Lvs-3d-mit" id="BH8-C7-fkb"/>
+                        <outlet property="monsterBullet" destination="YNN-m6-k9Y" id="5Vg-Se-pK7"/>
+                        <outlet property="monsterBullet2" destination="x8E-JW-p1o" id="CEH-3u-x2Z"/>
+                        <outlet property="monsterBullet3" destination="Bi1-WF-c34" id="7Nv-ts-xVZ"/>
                         <outlet property="shoot" destination="YPZ-XL-NIE" id="hfT-dv-7km"/>
                         <outlet property="start" destination="sgi-z8-fTJ" id="ECp-qw-LVK"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7GW-8w-JqQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="729" y="41"/>
+            <point key="canvasLocation" x="612" y="12"/>
         </scene>
     </scenes>
     <resources>
