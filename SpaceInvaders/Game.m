@@ -58,7 +58,26 @@ int monsterShootStart;
 @implementation Game
 
 -(void)gameOver{
-    
+    _winOrLose.hidden = NO;
+    _winOrLose.text = [NSString stringWithFormat:@"你输了!"];
+    _monster1.hidden = YES;
+    _monster2.hidden = YES;
+    _monster3.hidden = YES;
+    _monster4.hidden = YES;
+    _monster5.hidden = YES;
+    _monster6.hidden = YES;
+    _monster7.hidden = YES;
+    _monster8.hidden = YES;
+    _monster9.hidden = YES;
+    _monster10.hidden = YES;
+    _hero.hidden = YES;
+    _bullet.hidden = YES;
+    _monsterBullet.hidden = YES;
+    _monsterBullet2.hidden = YES;
+    _monsterBullet3.hidden = YES;
+    _shoot.hidden = YES;
+    _exit.hidden = NO;
+    [movementTimer invalidate];
 }
 
 -(void)monsterMoveDown{
@@ -82,18 +101,41 @@ int monsterShootStart;
     _bullet.hidden = YES;
     bulletMovement = 0;
     _bullet.center = CGPointMake(200, 560);
+    
+    if(monsterKilled == 10){
+        _winOrLose.hidden = NO;
+        _winOrLose.text = [NSString stringWithFormat:@"你赢了!"];
+        _hero.hidden = YES;
+        _shoot.hidden = YES;
+        _exit.hidden = NO;
+        _monsterBullet.hidden = YES;
+        _monsterBullet2.hidden = YES;
+        _monsterBullet3.hidden = YES;
+        [movementTimer invalidate];
+    }
 }
 
 -(void)collision{
-    if(CGRectIntersectsRect(_monsterBullet.frame, _hero.frame)){
+    if(CGRectIntersectsRect(_monsterBullet.frame, _hero.frame)
+       || CGRectIntersectsRect(_monsterBullet2.frame, _hero.frame)
+       || CGRectIntersectsRect(_monsterBullet3.frame, _hero.frame)){
         [self gameOver];
     }
-    if(CGRectIntersectsRect(_monsterBullet2.frame, _hero.frame)){
+    if((CGRectIntersectsRect(_monster1.frame, _hero.frame) && monster1Hit == NO)
+       || (CGRectIntersectsRect(_monster2.frame, _hero.frame) && monster2Hit == NO)
+       || (CGRectIntersectsRect(_monster3.frame, _hero.frame) && monster3Hit == NO)
+       || (CGRectIntersectsRect(_monster4.frame, _hero.frame) && monster4Hit == NO)
+       || (CGRectIntersectsRect(_monster5.frame, _hero.frame) && monster5Hit == NO)
+       || (CGRectIntersectsRect(_monster6.frame, _hero.frame) && monster6Hit == NO)
+       || (CGRectIntersectsRect(_monster7.frame, _hero.frame) && monster7Hit == NO)
+       || (CGRectIntersectsRect(_monster8.frame, _hero.frame) && monster8Hit == NO)
+       || (CGRectIntersectsRect(_monster9.frame, _hero.frame) && monster9Hit == NO)
+       || (CGRectIntersectsRect(_monster10.frame, _hero.frame) && monster10Hit == NO)){
         [self gameOver];
     }
-    if(CGRectIntersectsRect(_monsterBullet3.frame, _hero.frame)){
-        [self gameOver];
-    }
+    
+    
+    
     
     if(CGRectIntersectsRect(_bullet.frame, _monster1.frame) && monster1Hit == NO){
         monster1Hit = YES;
@@ -174,6 +216,13 @@ int monsterShootStart;
     [self collision];
     
     _hero.center = CGPointMake(_hero.center.x+heroMovement, _hero.center.y);
+    if(_hero.center.x < 30){
+        _hero.center = CGPointMake(30, _hero.center.y);
+    }
+    if(_hero.center.x > 290){
+        _hero.center = CGPointMake(290, _hero.center.y);
+    }	
+    
     _bullet.center = CGPointMake(_bullet.center.x, _bullet.center.y-bulletMovement);
     _monster1.center = CGPointMake(_monster1.center.x+monsterMovement, _monster1.center.y);
     _monster2.center = CGPointMake(_monster2.center.x+monsterMovement, _monster2.center.y);
